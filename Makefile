@@ -10,4 +10,4 @@ install-packages:
 	pip install -r requirements.txt
 
 run-server:
-	${PYTHON} planets_fact_site/manage.py runserver
+	${PYTHON} manage.py runserver
