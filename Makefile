@@ -1,5 +1,5 @@
 # variables
-VENV = env
+VENV = venv
 PYTHON = ${VENV}/bin/python
 PIP = ${venv}/bin/pip
 
