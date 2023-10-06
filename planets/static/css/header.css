@@ -1,0 +1,137 @@
+.pfs__header__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__header__container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pfs__header__container {
+        flex-direction: row;
+    }
+}
+
+.menu-left {
+    flex-grow: 1;
+}
+
+.menu-right {
+    flex-grow: 5;
+}
+
+.pfs__header {
+    border-bottom: 1px solid #979797;
+    padding: 0 0 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__header {
+        border-bottom: 1px solid #979797;
+        min-height: 85px;
+        padding: 0 32px;
+    }
+
+    .pfs__header__heading {
+        font-size: 28px;
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pfs__header__heading {
+        padding-top: 20px;
+    }
+}
+
+.pfs__mobile-hamburger {
+    float: right;
+    margin: 25px 15px 0 0;
+    display: block;
+    width: 30px;
+    height: 25px;
+    background-image: url('../imgs/icon-hamburger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__mobile-hamburger {
+        display: none;
+    }
+}
+
+.pfs__header__menu__list {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__header__menu__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        height: 100%;
+        font-family: Spartan, sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pfs__header__menu__list {
+        margin:0 0 25px 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+.pfs__header__menu__list__item {
+    border-top: 3px solid transparent;
+    text-transform: uppercase;
+    padding: 25px 0 15px 0;
+    min-width: 68px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__header__menu__list__item {
+        border-bottom: 3px solid #419EBB;
+        margin-bottom: -18px;
+    }
+    .pfs__header__menu__list__item:not(:target):not(.visible) {
+        border-bottom: 3px solid transparent;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pfs__header__menu__list__item {
+        margin-left: 15px;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .pfs__header__menu__list__item.active,
+    .pfs__header__menu__list__item:hover {
+        border-top: 3px solid #419EBB;
+        border-bottom: none;
+    }
+}
+
+.pfs__header__menu__list__item a:link,
+.pfs__header__menu__list__item a:visited {
+    color: #ffffff;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
