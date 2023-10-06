@@ -1,0 +1,100 @@
+.pfs__header__menu__mobile {
+    display: block;
+    background-color: #070724;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.pfs__header__menu__mobile:not(:target):not(.visible) {
+    display: none;
+}
+
+.pfs__header__menu__mobile__list {
+    list-style: none;
+    color: #ffffff;
+}
+
+.pfs__header__menu__mobile__list__item {
+    height: 70px;
+    border-bottom: 1px solid #979797;
+}
+
+.pfs__header__menu__mobile__list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: 28px 0 0 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+.pfs__header__menu__mobile__list__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin-top: -45px;
+    height: 20px;
+    width: 10px;
+    background-image: url('../imgs/icon-chevron.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pfs__header__menu__mobile__list__item.item--mercury::before {
+    background-color: #DEF4FC;
+}
+
+.pfs__header__menu__mobile__list__item.item--venus::before {
+    background-color: #F7CC7F;
+}
+
+.pfs__header__menu__mobile__list__item.item--earth::before {
+    background-color: #545BFE;
+}
+
+.pfs__header__menu__mobile__list__item.item--mars::before {
+    background-color: #FF6A45;
+}
+
+.pfs__header__menu__mobile__list__item.item--jupiter::before {
+    background-color: #ECAD7A;
+}
+
+.pfs__header__menu__mobile__list__item.item--saturn::before {
+    background-color: #FCCB6B;
+}
+
+.pfs__header__menu__mobile__list__item.item--uranus::before {
+    background-color: #65F0D5;
+}
+
+.pfs__header__menu__mobile__list__item.item--neptune::before {
+    background-color: #497EFA;
+}
+
+.pfs__header__menu__mobile__list__item a,
+.pfs__header__menu__mobile__list__item a:link,
+.pfs__header__menu__mobile__list__item a:visited {
+    font-family: Spartan, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 22px 0 20px 60px;
+}
+
+.pfs__header__menu__mobile__list__item a:hover {
+    color: #419EBB;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__header__menu__mobile {
+        display: none;
+    }
+}
