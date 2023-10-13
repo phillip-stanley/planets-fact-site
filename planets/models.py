@@ -27,7 +27,11 @@ class Planet(models.Model):
     surface_geology_img = models.ImageField(upload_to='uploads/')
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
-    status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
+    status = models.CharField(
+            max_length=2,
+            choices=Status.choices,
+            default=Status.DRAFT
+    )
 
     objects = models.Manager()
     published = PublishedManager()

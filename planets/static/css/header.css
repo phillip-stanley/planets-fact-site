@@ -1,9 +1,11 @@
 .pfs__header__container {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
     max-width: 1440px;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -29,6 +31,7 @@
 .pfs__header {
     border-bottom: 1px solid #979797;
     padding: 0 0 0 32px;
+    margin-bottom: 65px;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,7 +91,7 @@
 
 @media screen and (min-width: 992px) {
     .pfs__header__menu__list {
-        margin:0 0 25px 0;
+        margin:0 0 0 0;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
@@ -107,7 +110,6 @@
 
 @media screen and (min-width: 768px) {
     .pfs__header__menu__list__item {
-        border-bottom: 3px solid #419EBB;
         margin-bottom: -18px;
     }
     .pfs__header__menu__list__item:not(:target):not(.visible) {
@@ -117,12 +119,13 @@
 
 @media screen and (min-width: 992px) {
     .pfs__header__menu__list__item {
+        border-bottom: 3px solid #419EBB;
         margin-left: 15px;
         border-bottom: none;
         margin-bottom: 0;
     }
     .pfs__header__menu__list__item.active,
-    .pfs__header__menu__list__item:hover {
+    .pfs__header__menu__list__item:is(:target) {
         border-top: 3px solid #419EBB;
         border-bottom: none;
     }

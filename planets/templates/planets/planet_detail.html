@@ -1,3 +1,90 @@
-{% extends "planets/base.html" %}
+{% extends "./base.html" %}
 {% block title %}{{ planet.name }}{% endblock %}
-<h2>{{ planet.name }}</h2>
+{% block content %}
+<section class="pfs__planet-detail__container">
+
+    <section class="pfs__planet-detail">
+
+        <figure class="pfs__planet-detail__figure">
+            <img src="{{ planet.overview_img.url }}" alt={ planet.name } />
+        </figure>
+
+        <article class="pfs__planet-detail__article">
+
+            <section class="pfs__planet-detail__article__overview">
+                <h2>{{ planet.name }}</h2>
+                <p class="pfs__planet-detail__article__overview__blurb">
+                    {{ planet.overview }}
+                </p>
+                <span class="pfs__planet-detail__article__overview__link">
+                    Source: <a href="#wiki">Wikipedia</a>
+                </span>
+            </section>
+
+            <navigation class="pfs__planet-detail__article__nav">
+                <a
+                    id="#{{planet.name | lower }}/overview"
+                    class="link--{{ planet.name | lower }}"
+                    href="#{{ planet.name | lower }}/overview"
+                >
+                    <span>01</span> overview 
+                </a>
+                <a
+                    id="#{{ planet.name | lower }}/structure"
+                    class="link--{{ planet.name | lower }}"
+                    href="#{{ planet.name | lower}}/structure"
+                >
+                    <span>02</span> internal structure 
+                </a>
+                <a
+                    id="#{{ planet.name | lower }}/geology"
+                    class="link--{{ planet.name | lower }}"
+                    href="#{{ planet.name | lower}}/geology"
+                >
+                    <span>03</span> surface geology 
+                </a>
+            </navigation>
+
+        </article>
+
+    </section>
+
+    <aside class="pfs__planet-stats">
+        <ul class="pfs__planet-stats__list">
+            <li class="pfs__planet-stats__list__item">
+                <span class="pfs__planet-stats__list__item__title">
+                    rotation time
+                </span>
+                <p class="pfs__planet-stats__list__item__metric">
+                    {{ planet.rotation_time }} DAYS
+                </p>
+            </li>
+            <li class="pfs__planet-stats__list__item">
+                <span class="pfs__planet-stats__list__item__title">
+                    rotation time
+                </span>
+                <p class="pfs__planet-stats__list__item__metric">
+                    {{ planet.rotation_time }} DAYS
+                </p>
+            </li>
+            <li class="pfs__planet-stats__list__item">
+                <span class="pfs__planet-stats__list__item__title">
+                    revolution time
+                </span>
+                <p class="pfs__planet-stats__list__item__metric">
+                    {{ planet.revolution_time }} KM
+                </p>
+            </li>
+            <li class="pfs__planet-stats__list__item">
+                <span class="pfs__planet-stats__list__item__title">
+                    radius
+                </span>
+                <p class="pfs__planet-stats__list__item__metric">
+                {{ planet.radius }} °C
+                </p>
+            </li>
+        </ul>
+    </aside>
+
+</section>
+{% endblock %}
