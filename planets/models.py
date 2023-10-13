@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class PublishedManager(models.Manager):
@@ -44,3 +45,7 @@ class Planet(models.Model):
 
     def __str__(self):
         return self.name
+ 
+
+    def get_absolute_url(self):
+        return reverse('planets:planet_detail', args=[self.slug])

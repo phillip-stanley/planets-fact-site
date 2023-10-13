@@ -1,0 +1,21 @@
+<navigation class="pfs__planet-detail__article__nav">
+    <a 
+        class="{% if active == 'overview' %}link--{{ planet.name | lower }} {% endif %}"
+        href="{{ planet.get_absolute_url }}"
+    >
+        <span>01</span> overview 
+    </a>
+    <a 
+        class="{% if active == 'structure' %}link--{{ planet.name | lower }} {% endif %}"
+        href="{{ planet.get_absolute_url }}structure"
+    >
+        <span>02</span> internal structure 
+    </a>
+    <a
+        class="{% if active == 'geology' %}link--{{ planet.name | lower }} {% endif %}"
+        href="{{ planet.get_absolute_url }}geology"
+    >
+        <span>03</span> surface geology 
+    </a>
+</navigation>
+
