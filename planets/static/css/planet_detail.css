@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 992px) {
     .pfs__planet-detail__figure {
-        margin-left: 10%;
+        margin-left: 0%;
     }
 }
 
@@ -72,7 +72,7 @@
 @media screen and (min-width: 992px) {
     .pfs__planet-detail__article {
         flex-direction: column;
-        padding-left: 10%;
+        /*padding-left: 10%;*/
     }
 }
 
@@ -157,36 +157,36 @@
     height: 50px;
 }
 
-.pfs__planet-detail__article__nav a.link--mercury:hover {
+.pfs__planet-detail__article__nav a.link--mercury {
     background-color: #419EBB;
 }
 
-.pfs__planet-detail__article__nav .link--venus:hover {
+.pfs__planet-detail__article__nav .link--venus {
     background-color: #EDA249;
 }
 
-.pfs__planet-detail__article__nav .link--earth:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--earth {
+    background-color: #6D2ED5;
 }
 
-.pfs__planet-detail__article__nav .link--mars:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--mars {
+    background-color: #D14C32;
 }
 
-.pfs__planet-detail__article__nav .link--jupiter:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--jupiter {
+    background-color: #D83A34;
 }
 
-.pfs__planet-detail__article__nav .link--saturn:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--saturn {
+    background-color: #CD5128;
 }
 
-.pfs__planet-detail__article__nav .link--uranus:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--uranus {
+    background-color: #1EC1A2;
 }
 
-.pfs__planet-detail__article__nav .link--neptune:hover {
-    background-color: #419EBB;
+.pfs__planet-detail__article__nav .link--neptune {
+    background-color: #2D68F0;
 }
 
 .pfs__planet-detail__article__nav a span {
