@@ -1,6 +1,9 @@
 {% extends "./base.html" %}
 {% block title %}{{ planet.name }}{% endblock %}
 {% block content %}
+<header class="pfs__header">
+    {% include "./menu.html" %}
+</header>
 <section class="pfs__planet-detail__container">
 
     <section class="pfs__planet-detail">
