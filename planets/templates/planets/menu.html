@@ -5,28 +5,52 @@
     <div class="menu-right">
         <a id="hamburger" class="pfs__mobile-hamburger" href="#menu" role="navigation"></a>
         <ul class="pfs__header__menu__list">
-            <li id="mercury" class="pfs__header__menu__list__item">
+            <li 
+                class="pfs__header__menu__list__item {% if planet.slug == 'mercury' %}active{% endif %}"
+                id="mercury"
+            >
                 <a href="/mercury">mercury</a>
             </li>
-            <li id="venus" class="pfs__header__menu__list__item">
+            <li 
+                class="pfs__header__menu__list__item {% if planet.slug == 'venus' %}active{% endif %}"
+                id="venus"
+            >
                 <a href="/venus">venus</a>
             </li>
-            <li id="earth" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'earth' %}active{% endif %}"
+                id="earth"
+            >
                 <a href="/earth">earth</a>
             </li>
-            <li id="mars" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'mars' %}active{% endif %}"
+                id="mars"
+            >
                 <a href="/mars">mars</a>
             </li>
-            <li id="jupiter" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'jupiter' %}active{% endif %}"
+                id="jupiter"
+            >
                 <a href="/jupiter">jupiter</a>
             </li>
-            <li id="saturn" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'saturn' %}active{% endif %}"
+                id="saturn"
+            >
                 <a href="/saturn">saturn</a>
             </li>
-            <li id="uranus" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'uranus' %}active{% endif %}"
+                id="uranus"
+            >
                 <a href="/uranus">uranus</a>
             </li>
-            <li id="neptune" class="pfs__header__menu__list__item">
+            <li
+                class="pfs__header__menu__list__item {% if planet.slug == 'neptune' %}active{% endif %}"
+                id="neptune"
+            >
                 <a href="/neptune">neptune</a>
             </li>
         </ul>
