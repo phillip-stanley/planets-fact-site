@@ -83,13 +83,16 @@
 .pfs__header__menu__mobile__list__item a:link,
 .pfs__header__menu__mobile__list__item a:visited {
     font-family: Spartan, sans-serif;
-    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     height: 100%;
     width: 100%;
     display: block;
     padding: 22px 0 20px 60px;
+    cursor: pointer;
 }
 
 .pfs__header__menu__mobile__list__item a:hover {
