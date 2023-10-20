@@ -1,0 +1,30 @@
+.pfs__planet-detail__article__mobile-nav {
+    margin-top: -65px;
+}
+
+@media screen and (min-width: 768px) {
+    .pfs__planet-detail__article__mobile-nav {
+        display: none;
+    }
+}
+
+.pfs__planet-detail__article__mobile-nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #979797;
+}
+
+.pfs__planet-detail__article__mobile-nav__list__item {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.pfs__planet-detail__article__mobile-nav__list__item a:link,
+.pfs__planet-detail__article__mobile-nav__list__item a:visited {
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}

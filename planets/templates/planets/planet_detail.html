@@ -4,9 +4,12 @@
 <header class="pfs__header">
     {% include "./menu.html" %}
 </header>
+{% include "./menu_mobile.html" %}
 <section class="pfs__planet-detail__container">
 
     <section class="pfs__planet-detail">
+
+        {% include "./planet_navigation_mobile.html" %}
 
         <figure class="pfs__planet-detail__figure">
             <img src="{{ planet_image }}" alt={{ planet.name }} />
