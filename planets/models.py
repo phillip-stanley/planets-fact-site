@@ -45,7 +45,6 @@ class Planet(models.Model):
 
     def __str__(self):
         return self.name
- 
 
     def get_absolute_url(self):
         return reverse('planets:planet_detail', args=[self.slug])
